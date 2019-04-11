@@ -1,0 +1,13 @@
+Source: ros-dashing-uncrustify-vendor
+Section: misc
+Priority: extra
+Maintainer: Steven! Ragnarök <steven@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake, uncrustify, ros-dashing-ros-workspace
+Homepage: https://github.com/uncrustify/uncrustify
+Standards-Version: 3.9.2
+
+Package: ros-dashing-uncrustify-vendor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, uncrustify, ros-dashing-ros-workspace
+Description: Wrapper around uncrustify, providing nothing but a dependency on uncrustify, on some systems.
+ On others, it provides an ExternalProject build of uncrustify.
