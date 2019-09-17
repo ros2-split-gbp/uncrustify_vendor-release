@@ -1,3 +1,26 @@
+## uncrustify_vendor (eloquent) - 1.3.0-1
+
+The packages in the `uncrustify_vendor` repository were released into the `eloquent` distro by running `/usr/bin/bloom-release -n -r eloquent uncrustify_vendor --override-release-repository-push-url git@github.com:ros2-gbp/uncrustify_vendor-release` on `Tue, 17 Sep 2019 17:50:55 -0000`
+
+The `uncrustify_vendor` package was released.
+
+Version of package(s) in repository `uncrustify_vendor`:
+
+- upstream repository: https://github.com/ament/uncrustify_vendor.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.3.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.13`
+- rosdep version: `0.15.2`
+- rosdistro version: `0.7.4`
+- vcstools version: `0.1.42`
+
+
 ## uncrustify_vendor (dashing) - 1.2.0-1
 
 The packages in the `uncrustify_vendor` repository were released into the `dashing` distro by running `/home/steven/osrf/bloom/myscripts/py3env/bin/bloom-release -n -r dashing uncrustify_vendor --override-release-repository-push-url git@github.com:ros2-gbp/uncrustify_vendor-release` on `Thu, 11 Apr 2019 14:18:02 -0000`
