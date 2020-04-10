@@ -1,3 +1,26 @@
+## uncrustify_vendor (foxy) - 1.4.0-1
+
+The packages in the `uncrustify_vendor` repository were released into the `foxy` distro by running `/usr/bin/bloom-release --track foxy --rosdistro foxy uncrustify_vendor` on `Fri, 10 Apr 2020 17:55:35 -0000`
+
+The `uncrustify_vendor` package was released.
+
+Version of package(s) in repository `uncrustify_vendor`:
+
+- upstream repository: https://github.com/ament/uncrustify_vendor.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.4.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.3`
+- catkin_pkg version: `0.4.16`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.0`
+- vcstools version: `0.1.42`
+
+
 ## uncrustify_vendor (eloquent) - 1.3.0-1
 
 The packages in the `uncrustify_vendor` repository were released into the `eloquent` distro by running `/usr/bin/bloom-release -n -r eloquent uncrustify_vendor --override-release-repository-push-url git@github.com:ros2-gbp/uncrustify_vendor-release` on `Tue, 17 Sep 2019 17:50:55 -0000`
