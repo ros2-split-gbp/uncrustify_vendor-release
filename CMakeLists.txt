@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.10)
 
 project(uncrustify_vendor)
 
+option(FORCE_BUILD_VENDOR_PKG
+  "Build uncrustify from source, even if system-installed package is available"
+  OFF)
+
 find_package(ament_cmake REQUIRED)
 
 macro(build_uncrustify)
@@ -85,7 +89,7 @@ else()
     set(need_local_build TRUE)
   endif()
 endif()
-if(need_local_build)
+if(FORCE_BUILD_VENDOR_PKG OR need_local_build)
   build_uncrustify()
 endif()
 
