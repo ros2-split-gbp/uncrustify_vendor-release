@@ -1,3 +1,26 @@
+## uncrustify_vendor (rolling) - 1.5.3-1
+
+The packages in the `uncrustify_vendor` repository were released into the `rolling` distro by running `/home/cottsay/.local/bin/bloom-release uncrustify_vendor -r rolling` on `Thu, 18 Mar 2021 18:20:48 -0000`
+
+The `uncrustify_vendor` package was released.
+
+Version of package(s) in repository `uncrustify_vendor`:
+
+- upstream repository: https://github.com/ament/uncrustify_vendor.git
+- release repository: https://github.com/ros2-gbp/uncrustify_vendor-release.git
+- rosdistro version: `1.5.2-1`
+- old version: `1.5.2-1`
+- new version: `1.5.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.2`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## uncrustify_vendor (rolling) - 1.5.2-1
 
 The packages in the `uncrustify_vendor` repository were released into the `rolling` distro by running `/usr/bin/bloom-release uncrustify_vendor -r rolling` on `Mon, 01 Feb 2021 22:43:05 -0000`
