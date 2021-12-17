@@ -42,12 +42,10 @@ macro(build_uncrustify)
 
   include(ExternalProject)
 
-  # Pinning to tip of master at the time of a desired bugfix
-  set(uncrustify_version 45b836cff040594994d364ad6fd3f04adc890a26)
-  # Get uncrustify 0.68.1
-  ExternalProject_Add(uncrustify-${uncrustify_version}
+  # Get uncrustify 0.72.0
+  ExternalProject_Add(uncrustify-0.72.0
     GIT_REPOSITORY https://github.com/uncrustify/uncrustify.git
-    GIT_TAG ${uncrustify_version}
+    GIT_TAG uncrustify-0.72.0
     GIT_CONFIG advice.detachedHead=false
     # Suppress git update due to https://gitlab.kitware.com/cmake/cmake/-/issues/16419
     # See https://github.com/ament/uncrustify_vendor/pull/22 for details
@@ -83,9 +81,9 @@ set(need_local_build FALSE)
 if(NOT res EQUAL 0)
   set(need_local_build TRUE)
 else()
-  # version of uncrustify before 0.65 user a different versionning scheme so the regex wont be matched
+  # Before 0.65 uncrustify used a different versioning scheme so the regex won't match
   string(REGEX REPLACE "^Uncrustify-(.*)_f$" "\\1" version_prefix_match "${out}")
-  if(version_prefix_match STREQUAL "" OR version_prefix_match VERSION_LESS 0.68)
+  if(version_prefix_match STREQUAL "" OR version_prefix_match VERSION_LESS 0.72)
     set(need_local_build TRUE)
   endif()
 endif()
