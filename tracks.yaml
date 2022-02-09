@@ -147,4 +147,5 @@ tracks:
     ros_distro: rolling
     vcs_type: git
     vcs_uri: https://github.com/ament/uncrustify_vendor.git
-    version: :{auto}
+    version: 2.0.0
+    version_saved: :{auto}
