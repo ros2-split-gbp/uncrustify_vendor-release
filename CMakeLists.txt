@@ -45,7 +45,7 @@ macro(build_uncrustify)
   # Get uncrustify 0.72.0
   ExternalProject_Add(uncrustify-0.72.0
     GIT_REPOSITORY https://github.com/uncrustify/uncrustify.git
-    GIT_TAG uncrustify-0.72.0
+    GIT_TAG 1d3d8fa5e81bece0fac4b81316b0844f7cc35926  # uncrustify-0.72.0
     GIT_CONFIG advice.detachedHead=false
     # Suppress git update due to https://gitlab.kitware.com/cmake/cmake/-/issues/16419
     # See https://github.com/ament/uncrustify_vendor/pull/22 for details
