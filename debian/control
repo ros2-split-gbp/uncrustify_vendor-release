@@ -1,0 +1,13 @@
+Source: ros-iron-uncrustify-vendor
+Section: misc
+Priority: optional
+Maintainer: Scott K Logan <scott@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), git, ros-iron-ament-cmake, uncrustify, ros-iron-ros-workspace
+Homepage: https://github.com/uncrustify/uncrustify
+Standards-Version: 3.9.2
+
+Package: ros-iron-uncrustify-vendor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, uncrustify, ros-iron-ros-workspace
+Description: Wrapper around uncrustify, providing nothing but a dependency on uncrustify, on some systems.
+ On others, it provides an ExternalProject build of uncrustify.
